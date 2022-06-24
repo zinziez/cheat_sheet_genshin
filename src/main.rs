@@ -1,7 +1,7 @@
-use std::fs::File;
+use std::fs::{File, ReadDir};
 use std::io::{BufRead, BufReader};
 
-fn main() {
+fn read_char_file() {
     let filename = "src/character_list.txt";
     // Open the file in read-only mode (ignoring errors).
     let file = File::open(filename).unwrap();
@@ -13,4 +13,8 @@ fn main() {
         // Show the line and its number.
         println!("{}. {}", index + 1, line);
     }
+}
+
+fn main() {
+    read_char_file()
 }
