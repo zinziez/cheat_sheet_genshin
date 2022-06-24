@@ -1,6 +1,7 @@
 //Importing required libraries
 use std::fs::{File, ReadDir};
 use std::io::{BufRead, BufReader};
+use std::io;
 
 //Defining a function to read the characters from the file
 fn read_char_file() {
@@ -16,7 +17,14 @@ fn read_char_file() {
     }
 }
 
+fn read_user_input() -> String {
+    let mut input = String::new();
+    std::io::stdin().read_line(&mut input).unwrap();
+    return input;    
+}
+
 //The main function where the core of the program is executed
 fn main() {
-    read_char_file()
+    read_user_input();
+    read_char_file();
 }
