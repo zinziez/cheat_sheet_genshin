@@ -47,11 +47,19 @@ fn read_user_input() -> String {
 
 //Function that reads user input before exiting the program
 fn read_user_input_exit() {
-    println!("\nPress enter to return to the main menu");
+    println!("\nType 'exit' to exit the program.");
+    println!("Otherwise, type anything else to continue.");
     let mut input = String::new();
     std::io::stdin()
         .read_line(&mut input)
         .unwrap();
+    let input = input
+        .trim()
+        .to_string()
+        .to_lowercase();
+    if input == "exit" {
+        std::process::exit(0);
+    }
 }
 
 //The main function where the core of the program is executed
@@ -65,6 +73,9 @@ fn main() {
         let character = read_user_input();
         let charlist = read_file();
         //A for loop that checks if the user input matches any of the characters in the character_list.txt file
+        if character == "exit" {
+            std::process::exit(0);
+        }
         for x in charlist {
             if x == character {
                 cls();
