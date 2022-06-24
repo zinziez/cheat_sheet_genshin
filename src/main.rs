@@ -45,23 +45,6 @@ fn read_user_input() -> String {
     return input;    
 }
 
-//Function that reads user input before exiting the program
-fn read_user_input_exit() {
-    println!("\nType 'exit' to exit the program.");
-    println!("Otherwise, type anything else to continue.");
-    let mut input = String::new();
-    std::io::stdin()
-        .read_line(&mut input)
-        .unwrap();
-    let input = input
-        .trim()
-        .to_string()
-        .to_lowercase();
-    if input == "exit" {
-        std::process::exit(0);
-    }
-}
-
 //The main function where the core of the program is executed
 fn main() {
     loop{
@@ -69,6 +52,7 @@ fn main() {
         cls();
         println!("Welcome to the Genshin Cheat Sheet!");
         println!("Please type the name of the character you want to learn about.");
+        println!("Type 'exit' to exit the program.");
         println!("-------------------------------");
         let character = read_user_input();
         let charlist = read_file();
@@ -79,19 +63,14 @@ fn main() {
         for x in charlist {
             if x == character {
                 cls();
+                let x = x.as_str();
                 match_value = 1;
-                //If a character matches it will call the function that displays the character's information
-                //TODO: Add an if statement for each character. And call their function here.
-                if character == "venti" {
-                    venti();
-                    read_user_input_exit();
-                    break;
-                } else if character == "sayu" {
-                    sayu();
-                    read_user_input_exit();
-                    break;
+                match x {
+                    //TODO: match each character name to their function in the char_materials module
+                    "venti" => venti(),
+                    "sayu" => sayu(),
+                    _ => println!("Character not found."),
                 }
-                //Waits for the user to press enter before exiting the program
             }
         }
         if match_value == 0 {
