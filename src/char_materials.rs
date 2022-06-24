@@ -1,5 +1,7 @@
 use colour::*;
 
+//TODO: Add a function that displays each characters respective information
+
 pub fn venti() {
     println!("Ventis mat reqirements");
     println!("-------------------");
