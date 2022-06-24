@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["cls",""],["main",""],["read_file",""],["read_user_input",""]],"mod":[["char_materials",""]]});

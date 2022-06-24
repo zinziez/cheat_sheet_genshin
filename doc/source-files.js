@@ -1,0 +1,16 @@
+var N = null;var sourcesIndex = {};
+sourcesIndex["bitflags"] = {"name":"","files":["lib.rs"]};
+sourcesIndex["cfg_if"] = {"name":"","files":["lib.rs"]};
+sourcesIndex["cheat_sheet_genshin"] = {"name":"","files":["char_materials.rs","main.rs"]};
+sourcesIndex["colour"] = {"name":"","files":["lib.rs","unnamed.rs"]};
+sourcesIndex["crossterm"] = {"name":"","dirs":[{"name":"cursor","dirs":[{"name":"sys","files":["windows.rs"]}],"files":["ansi.rs","sys.rs"]},{"name":"event","dirs":[{"name":"source","files":["windows.rs"]},{"name":"sys","dirs":[{"name":"windows","files":["parse.rs","poll.rs"]}],"files":["windows.rs"]}],"files":["ansi.rs","filter.rs","read.rs","source.rs","sys.rs","timeout.rs"]},{"name":"style","dirs":[{"name":"sys","files":["windows.rs"]},{"name":"types","files":["attribute.rs","color.rs","colored.rs","colors.rs"]}],"files":["ansi.rs","attributes.rs","content_style.rs","macros.rs","styled_content.rs","sys.rs","traits.rs","types.rs"]},{"name":"terminal","dirs":[{"name":"sys","files":["windows.rs"]}],"files":["ansi.rs","sys.rs"]}],"files":["ansi_support.rs","command.rs","cursor.rs","error.rs","event.rs","lib.rs","macros.rs","style.rs","terminal.rs","tty.rs"]};
+sourcesIndex["crossterm_winapi"] = {"name":"","dirs":[{"name":"structs","files":["coord.rs","input.rs","size.rs","window_coords.rs"]}],"files":["console.rs","console_mode.rs","csbi.rs","handle.rs","lib.rs","screen_buffer.rs","semaphore.rs","structs.rs"]};
+sourcesIndex["instant"] = {"name":"","files":["lib.rs","native.rs"]};
+sourcesIndex["lazy_static"] = {"name":"","files":["inline_lazy.rs","lib.rs"]};
+sourcesIndex["lock_api"] = {"name":"","files":["lib.rs","mutex.rs","remutex.rs","rwlock.rs"]};
+sourcesIndex["parking_lot"] = {"name":"","files":["condvar.rs","deadlock.rs","elision.rs","fair_mutex.rs","lib.rs","mutex.rs","once.rs","raw_fair_mutex.rs","raw_mutex.rs","raw_rwlock.rs","remutex.rs","rwlock.rs","util.rs"]};
+sourcesIndex["parking_lot_core"] = {"name":"","dirs":[{"name":"thread_parker","dirs":[{"name":"windows","files":["keyed_event.rs","mod.rs","waitaddress.rs"]}],"files":["mod.rs"]}],"files":["lib.rs","parking_lot.rs","spinwait.rs","util.rs","word_lock.rs"]};
+sourcesIndex["scopeguard"] = {"name":"","files":["lib.rs"]};
+sourcesIndex["smallvec"] = {"name":"","files":["lib.rs"]};
+sourcesIndex["winapi"] = {"name":"","dirs":[{"name":"km","files":["mod.rs"]},{"name":"shared","files":["basetsd.rs","cfg.rs","devpropdef.rs","guiddef.rs","ktmtypes.rs","minwindef.rs","mod.rs","ntdef.rs","ntstatus.rs","rpcndr.rs","windef.rs","winerror.rs","wtypesbase.rs"]},{"name":"ucrt","files":["mod.rs"]},{"name":"um","dirs":[{"name":"gl","files":["mod.rs"]}],"files":["cfgmgr32.rs","consoleapi.rs","errhandlingapi.rs","fileapi.rs","handleapi.rs","libloaderapi.rs","minwinbase.rs","mod.rs","processenv.rs","processthreadsapi.rs","reason.rs","synchapi.rs","winbase.rs","wincon.rs","wincontypes.rs","wingdi.rs","winnt.rs","winreg.rs","winuser.rs"]},{"name":"vc","files":["excpt.rs","limits.rs","mod.rs","vadefs.rs","vcruntime.rs"]},{"name":"winrt","files":["mod.rs"]}],"files":["lib.rs","macros.rs"]};
+createSourceSidebar();

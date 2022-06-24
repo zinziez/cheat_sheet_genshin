@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["bitflags","cfg_if","cheat_sheet_genshin","colour","crossterm","crossterm_winapi","instant","lazy_static","lock_api","parking_lot","parking_lot_core","scopeguard","smallvec","winapi"];
