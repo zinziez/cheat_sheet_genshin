@@ -1,12 +1,13 @@
+//Importing required libraries
 use std::fs::{File, ReadDir};
 use std::io::{BufRead, BufReader};
 
+//Defining a function to read the characters from the file
 fn read_char_file() {
     let filename = "src/character_list.txt";
     // Open the file in read-only mode (ignoring errors).
     let file = File::open(filename).unwrap();
     let reader = BufReader::new(file);
-
     // Read the file line by line using the lines() iterator from std::io::BufRead.
     for (index, line) in reader.lines().enumerate() {
         let line = line.unwrap(); // Ignore errors.
@@ -15,6 +16,7 @@ fn read_char_file() {
     }
 }
 
+//The main function where the core of the program is executed
 fn main() {
     read_char_file()
 }
