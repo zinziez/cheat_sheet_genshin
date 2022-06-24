@@ -3,6 +3,9 @@
 //This application is licensed under the MIT license.
 //This application is open source and can be found on github at https://github.com/zinziez/cheat_sheet_genshin
 
+//Allow modules
+#![allow(clippy::needless_return)]
+
 //Importing required libraries
 use std::fs::File;
 use std::io::{BufRead, BufReader};
